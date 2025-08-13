@@ -1,0 +1,59 @@
+@use "../abstracts";
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Poppins;
+}
+
+:root {
+    --blue-color: #31c3e0;
+    --orange-color: #ff7b29;
+
+    --text-color: #2d3134;
+    --paragh-color: #676a6c;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+
+    &-orange {
+        padding: 24px 32px;
+        border-radius: 12px;
+        font-size: 1rem;
+        color: #fff;
+        background: var(--orange-color);
+        border-color: inherit;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: 0.18px;
+    }
+
+    &-blue {
+        padding: 16px 28px;
+        border-radius: 8px;
+        color: #fff;
+        border-color: transparent;
+        background: var(--blue-color);
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 114.286%;
+        letter-spacing: -0.14px;
+    }
+}

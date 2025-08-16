@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .header {
     margin-top: 32px;
 
@@ -40,6 +42,73 @@
             line-height: 114.286%;
             color: var(--paragh-color);
             transition: all 0.25s;
+        }
+    }
+}
+
+.hero {
+    &-wrap {
+        margin-top: 50px;
+        display: flex;
+
+        @include abstracts.breakpoint(xl) {
+            flex-direction: column;
+        }
+    }
+
+    &-content {
+        &__desc {
+            margin-top: 17px;
+        }
+
+        &-cta {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        &__desc {
+            width: 80%;
+        }
+    }
+
+    &-media__image {
+        width: 510px;
+
+        @include abstracts.breakpoint(xl) {
+            margin-top: 40px;
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+
+    &-stat {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+
+        @include abstracts.breakpoint(xl) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            &__icon {
+                background: #fff;
+                padding: 14px;
+                border-radius: 12px;
+                box-shadow: 0 17px 55px 0 rgba(96, 100, 100, 0.05);
+            }
+
+            &__desc {
+                margin-top: 4px;
+                white-space: nowrap;
+            }
         }
     }
 }

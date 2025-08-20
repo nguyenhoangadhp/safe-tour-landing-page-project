@@ -37,16 +37,17 @@
         }
 
         &__link {
+            color: var(--para-color);
             font-size: 1.4rem;
             font-weight: 500;
             line-height: 114.286%;
-            color: var(--paragh-color);
             transition: all 0.25s;
         }
     }
 }
 
 .hero {
+    margin-bottom: 100px;
     &-wrap {
         margin-top: 50px;
         display: flex;
@@ -57,8 +58,21 @@
     }
 
     &-content {
+        &__heading {
+            @include abstracts.breakpoint(md) {
+                font-size: 4rem;
+                font-weight: 600;
+                line-height: 125%;
+            }
+        }
+
         &__desc {
             margin-top: 17px;
+            width: 80%;
+
+            @include abstracts.breakpoint(lg) {
+                width: 100%;
+            }
         }
 
         &-cta {
@@ -66,10 +80,19 @@
             display: flex;
             align-items: center;
             gap: 28px;
-        }
 
-        &__desc {
-            width: 80%;
+            &__btn {
+                @include abstracts.breakpoint(md) {
+                    padding: 18px;
+                    font-size: 1.6rem;
+                }
+            }
+
+            &__play {
+                @include abstracts.breakpoint(md) {
+                    width: 150px;
+                }
+            }
         }
     }
 
@@ -89,8 +112,11 @@
         gap: 44px;
 
         @include abstracts.breakpoint(xl) {
+            width: 100%;
             flex-direction: row;
             justify-content: space-between;
+
+            margin-bottom: 100px;
         }
 
         &-item {

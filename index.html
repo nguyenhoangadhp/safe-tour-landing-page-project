@@ -30,7 +30,7 @@
                         <img src="./assets/images/logo.svg" alt="" />
                     </a>
 
-                    <nav class="nav">
+                    <nav class="nav hide-lg">
                         <ul class="nav-list">
                             <li class="nav-item nav-item--active">
                                 <a class="nav-item__link" href="#!">Home</a>
@@ -50,7 +50,10 @@
                         </ul>
                     </nav>
 
-                    <button class="btn btn--blue">Contact us</button>
+                    <button class="btn btn--blue hide-lg">Contact us</button>
+                    <div class="menu-mobile hide show-lg">
+                        <img src="./assets/icons/mobile-menu.svg" alt="" class="menu-mobile__img" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,7 +64,7 @@
                 <div class="hero-wrap">
                     <!-- Hero content -->
                     <div class="hero-content">
-                        <h1 class="heading--primary">Let's Make Your Best Trip Ever</h1>
+                        <h1 class="heading--primary hero-content__heading">Let's Make Your Best Trip Ever</h1>
                         <p class="desc--primary hero-content__desc">
                             Plan and book your perfect trip with expert advice, travel tips, destination information and
                             inspiration from us.
@@ -81,7 +84,7 @@
                     </div>
 
                     <!-- Statistic -->
-                    <div class="hero-stat">
+                    <div class="hero-stat hide-md">
                         <div class="hero-stat-item">
                             <img src="./assets/icons/hero-stat-01.svg" alt="" class="hero-stat-item__icon" />
                             <div class="hero-stat-item__info">
@@ -104,6 +107,44 @@
                                 <span class="heading--third hero-stat-item__number">725+</span>
                                 <p class="desc--second hero-stat-item__desc">Property Build</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search -->
+                <div class="search" style="margin-bottom: 500px">
+                    <div class="search-wrap">
+                        <div class="search-list">
+                            <div class="search-item">
+                                <h4 class="heading--fourth search-item__title">Location</h4>
+                                <div class="search-item-menu">
+                                    <span class="desc--second search-item-menu__desc">Bali, Indonesia</span>
+                                    <img src="./assets/icons/arrow-down.svg" alt="" class="search-item-menu__icon" />
+                                </div>
+                            </div>
+
+                            <div class="search-item">
+                                <h4 class="heading--fourth search-item__title">City</h4>
+                                <div class="search-item-menu">
+                                    <span class="desc--second search-item-menu__desc">Prambanan</span>
+                                    <img src="./assets/icons/arrow-down.svg" alt="" class="search-item-menu__icon" />
+                                </div>
+                            </div>
+
+                            <div class="search-item">
+                                <h4 class="heading--fourth search-item__title">Guest</h4>
+                                <div class="search-item-menu">
+                                    <span class="desc--second search-item-menu__desc">8 Persons</span>
+                                    <img src="./assets/icons/arrow-down.svg" alt="" class="search-item-menu__icon" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search-cta">
+                            <button class="search-cta__btn">
+                                <img src="./assets/icons/search.svg" alt="" class="search-cta__btn-icon" />
+                                <span>Search</span>
+                            </button>
                         </div>
                     </div>
                 </div>

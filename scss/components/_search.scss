@@ -1,0 +1,77 @@
+@use "../abstracts";
+
+.search {
+    &-wrap,
+    &-list,
+    &-item {
+        display: flex;
+    }
+
+    &-wrap {
+        align-items: center;
+        width: 750px;
+        margin: 0 auto;
+        padding: 25px 40px;
+        border-radius: 24px;
+        box-shadow: 0 40px 100px rgba(110, 110, 110, 0.08);
+
+        justify-content: space-between;
+
+        @include abstracts.breakpoint(lg) {
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+        }
+    }
+
+    &-list {
+        gap: 74px;
+
+        @include abstracts.breakpoint(lg) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 32px;
+        }
+    }
+
+    &-item {
+        flex-direction: column;
+        gap: 16px;
+
+        &-menu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+    }
+
+    &-cta {
+        &__btn {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.25s;
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+            padding: 24px 40px;
+            border-radius: 8px;
+            background: #132742;
+            box-shadow: 0 25px 25px -20px rgba(0, 0, 0, 0.2);
+            border-color: transparent;
+
+            color: #fff;
+
+            font-family: Inter;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 88.889%;
+            letter-spacing: 0.36px;
+        }
+    }
+}

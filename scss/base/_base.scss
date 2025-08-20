@@ -15,6 +15,7 @@ body {
     font-family: Poppins;
 }
 
+// Color
 :root {
     --blue-color: #31c3e0;
     --orange-color: #ff7b29;
@@ -28,14 +29,17 @@ a {
     text-decoration: none;
 }
 
+// Button
 .btn {
     display: flex;
     align-items: center;
     font-family: inherit;
     height: 100%;
     white-space: nowrap;
+    border-color: transparent;
     cursor: pointer;
     transition: all 0.25s;
+
     &:hover {
         opacity: 0.85;
     }
@@ -45,7 +49,6 @@ a {
         border-radius: 12px;
         font-size: 1.8rem;
         color: #fff;
-        border-color: transparent;
         background: var(--orange-color);
         font-weight: 600;
         line-height: 100%;
@@ -56,7 +59,6 @@ a {
         padding: 16px 28px;
         border-radius: 8px;
         color: #fff;
-        border-color: transparent;
         background: var(--blue-color);
         font-size: 1.4rem;
         font-weight: 500;
@@ -65,6 +67,7 @@ a {
     }
 }
 
+// Heading & Paragraph
 .heading--primary {
     color: var(--text-color);
     font-family: Poppins;
@@ -89,6 +92,13 @@ a {
     line-height: 133.333%;
 }
 
+.heading--fourth {
+    color: var(--text-color);
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
 .desc--primary {
     color: var(--para-color);
     font-family: Inter;
@@ -103,4 +113,39 @@ a {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 142.857%;
+}
+
+// Show / Hide / Responsive
+.hide {
+    display: none !important;
+}
+
+.hide-lg {
+    @include abstracts.breakpoint(lg) {
+        display: none !important;
+    }
+}
+
+.hide-md {
+    @include abstracts.breakpoint(md) {
+        display: none !important;
+    }
+}
+
+.show-xl {
+    @include abstracts.breakpoint(xl) {
+        display: block !important;
+    }
+}
+
+.show-lg {
+    @include abstracts.breakpoint(lg) {
+        display: block !important;
+    }
+}
+
+.show-md {
+    @include abstracts.breakpoint(md) {
+        display: block !important;
+    }
 }

@@ -55,16 +55,11 @@
             cursor: pointer;
             transition: all 0.25s;
 
-            &:hover {
-                opacity: 0.9;
-            }
-
             padding: 24px 40px;
             border-radius: 8px;
             background: #132742;
             box-shadow: 0 25px 25px -20px rgba(0, 0, 0, 0.2);
             border-color: transparent;
-
             color: #fff;
 
             font-family: Inter;
@@ -72,6 +67,15 @@
             font-weight: 500;
             line-height: 88.889%;
             letter-spacing: 0.36px;
+
+            @include abstracts.breakpoint(md) {
+                padding: 18px 20px;
+                font-size: 1.6rem;
+            }
+
+            &:hover {
+                opacity: 0.9;
+            }
         }
     }
 }

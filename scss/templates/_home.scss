@@ -1,5 +1,6 @@
 @use "../abstracts";
 
+// Header
 .header {
     margin-top: 32px;
 
@@ -10,6 +11,7 @@
     }
 }
 
+// Navigation
 .nav {
     &-list {
         display: flex;
@@ -46,8 +48,9 @@
     }
 }
 
+// Hero
 .hero {
-    margin-bottom: 100px;
+    margin-bottom: 140px;
     &-wrap {
         margin-top: 50px;
         display: flex;
@@ -134,6 +137,171 @@
             &__desc {
                 margin-top: 4px;
                 white-space: nowrap;
+            }
+        }
+    }
+}
+
+// Best tour
+.best-tour {
+    &-content {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include abstracts.breakpoint(lg) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__heading {
+        @include abstracts.breakpoint(md) {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__desc {
+        width: 507px;
+        margin-top: 16px;
+
+        @include abstracts.breakpoint(lg) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        @include abstracts.breakpoint(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__btn {
+        @include abstracts.breakpoint(md) {
+            font-size: 1.6rem;
+            padding: 18px 20px;
+        }
+    }
+
+    &-list {
+        margin-top: 30px;
+    }
+
+    &-item {
+        height: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 17px 55px 0 rgba(96, 100, 100, 0.05);
+
+        &-info {
+            padding: 20px 28px;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__price {
+            color: #ff7b29;
+
+            font-family: Inter;
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 133.333%;
+        }
+
+        &__title {
+            margin-top: 6px;
+            margin-bottom: 20px;
+            color: #1f1d63;
+
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 150%;
+        }
+
+        &__col {
+            margin-top: 10px;
+            display: flex;
+            gap: 28px;
+        }
+
+        &__row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+}
+
+.reason {
+    margin-top: 142px;
+
+    &-wrap {
+        padding: 0 52px;
+        display: flex;
+        gap: 138px;
+        justify-content: center;
+
+        @include abstracts.breakpoint(xl) {
+            flex-direction: column;
+            gap: 50px;
+            padding: 0;
+        }
+    }
+
+    &__img {
+        width: 436px;
+        object-fit: cover;
+
+        @include abstracts.breakpoint(xl) {
+            width: 100%;
+        }
+    }
+
+    &__heading {
+        @include abstracts.breakpoint(md) {
+            font-size: 2.4rem;
+            line-height: 133.333%;
+        }
+    }
+
+    &__desc {
+        margin-top: 16px;
+
+        @include abstracts.breakpoint(md) {
+            font-size: 1.4rem;
+            line-height: 142.857%;
+        }
+    }
+
+    &-list {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px 0;
+    }
+
+    &-item {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        &__heading {
+            font-family: inherit;
+
+            @include abstracts.breakpoint(md) {
+                font-size: 1.4rem;
+                line-height: 142.857%;
+            }
+        }
+
+        &__desc {
+            margin-top: 8px;
+            @include abstracts.breakpoint(md) {
+                font-size: 1.4rem;
+                line-height: 142.857%;
             }
         }
     }

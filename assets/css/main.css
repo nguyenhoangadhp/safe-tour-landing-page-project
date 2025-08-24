@@ -142,6 +142,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Poppins;
+  color: var(--text-color);
 }
 
 :root {
@@ -178,6 +179,7 @@ a {
   font-weight: 600;
   line-height: 100%;
   letter-spacing: 0.18px;
+  box-shadow: 0 30px 30px -18px rgba(229, 89, 54, 0.16);
 }
 .btn--blue {
   padding: 16px 28px;
@@ -1509,6 +1511,11 @@ a {
 .reason {
   margin-top: 142px;
 }
+@media (max-width: 767.98px) {
+  .reason {
+    margin-top: 80px;
+  }
+}
 .reason-wrap {
   padding: 0 52px;
   display: flex;
@@ -1553,6 +1560,11 @@ a {
   gap: 40px;
   padding: 20px 0;
 }
+@media (max-width: 767.98px) {
+  .reason-list {
+    margin-top: 30px;
+  }
+}
 .reason-item {
   display: flex;
   gap: 30px;
@@ -1575,6 +1587,141 @@ a {
     font-size: 1.4rem;
     line-height: 142.857%;
   }
+}
+
+.trend {
+  margin-top: 138px;
+}
+@media (max-width: 767.98px) {
+  .trend__heading {
+    font-size: 2.4rem;
+  }
+}
+.trend__desc {
+  margin-top: 16px;
+}
+@media (max-width: 767.98px) {
+  .trend__desc {
+    font-size: 1.4rem;
+  }
+}
+.trend-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 991.98px) {
+  .trend-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+.trend-nav {
+  display: flex;
+  gap: 14px;
+}
+.trend-nav__icon {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #505050;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #ececec;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.trend-nav__icon:hover {
+  background: var(--orange-color);
+  border-color: var(--orange-color);
+  color: #fff;
+}
+.trend-list {
+  margin-top: 40px;
+}
+.trend-item {
+  height: 100%;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 40px 90px 0 rgba(0, 0, 0, 0.06);
+  padding: 15px 15px 24px 15px;
+}
+.trend-item__img {
+  width: 100%;
+}
+.trend-item-info {
+  padding: 0 10px;
+}
+.trend-item__title {
+  margin-top: 18px;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+@media (max-width: 767.98px) {
+  .trend-item__title {
+    font-size: 1.6rem;
+  }
+}
+.trend-item__row {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.trend-item__desc {
+  color: #8a8a8a;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+.trend-item__desc-sepa {
+  margin: 0 8px;
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background: #e1e1e1;
+}
+.trend-item__price {
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 133.333%;
+}
+.trend-item__btn {
+  margin-left: auto;
+}
+@media (max-width: 767.98px) {
+  .trend-item__btn {
+    padding: 12px 16px;
+  }
+}
+.trend-item-logo__icon {
+  margin-right: 14px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.04);
+}
+.trend-item-logo__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 4px 3px;
+  width: 20px;
+  height: 20px;
+  background: var(--orange-color);
+  color: #fff;
+  font-size: 1rem;
 }
 
 .search-wrap, .search-list, .search-item {

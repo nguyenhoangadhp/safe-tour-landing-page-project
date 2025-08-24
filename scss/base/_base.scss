@@ -13,6 +13,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: Poppins;
+    color: var(--text-color);
 }
 
 // Color
@@ -53,6 +54,7 @@ a {
         font-weight: 600;
         line-height: 100%;
         letter-spacing: 0.18px;
+        box-shadow: 0 30px 30px -18px rgba(229, 89, 54, 0.16);
     }
 
     &--blue {

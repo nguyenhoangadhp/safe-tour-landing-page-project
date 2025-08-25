@@ -1724,6 +1724,108 @@ a {
   font-size: 1rem;
 }
 
+.desti {
+  margin-top: 138px;
+}
+.desti__heading {
+  margin-bottom: 16px;
+}
+@media (max-width: 767.98px) {
+  .desti__heading {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .desti__desc {
+    font-size: 1.4rem;
+  }
+}
+.desti-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 991.98px) {
+  .desti-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 991.98px) {
+  .desti-top__btn {
+    margin-top: 30px;
+    font-size: 1.6rem;
+  }
+}
+.desti-loca {
+  height: 526px;
+  margin-top: 38px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1.4fr 1fr;
+}
+@media (max-width: 991.98px) {
+  .desti-loca {
+    grid-template-columns: 1fr;
+    height: 1160px;
+  }
+}
+.desti-loca-left {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1.4fr;
+}
+.desti-loca-left__left {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.desti-loca-right {
+  display: grid;
+  gap: 26px;
+  grid-column: 1fr;
+}
+.desti-loca-right__bottom {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1.5fr;
+}
+.desti-loca-item {
+  height: 100%;
+  padding: 22px 24px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(36, 36, 40, 0.59) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.desti-loca-item__score {
+  width: 45px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  color: var(--orange-color);
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.desti-loca-item__title {
+  color: #fff;
+  text-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 133.333%;
+}
+.desti-loca-item__desc {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+
 .search-wrap, .search-list, .search-item {
   display: flex;
 }

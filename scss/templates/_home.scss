@@ -582,3 +582,129 @@
         }
     }
 }
+
+// Tour Type
+.tour {
+    margin-top: 140px;
+
+    @include abstracts.breakpoint(md) {
+        margin-top: 80px;
+    }
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 60px;
+
+        @include abstracts.breakpoint(md) {
+            font-size: 2.4rem;
+            margin-bottom: 40px;
+        }
+    }
+
+    &-list {
+        @include abstracts.breakpoint(lg) {
+            padding: 0 34px;
+        }
+    }
+
+    &-item {
+        padding: 42px 0;
+        text-align: center;
+        border-radius: 12px;
+        border: 2px solid #ececec;
+        background: #fff;
+
+        &__title {
+            margin-top: 28px;
+            margin-bottom: 18px;
+            font-family: Inter;
+            font-size: 2.6rem;
+            font-weight: 600;
+        }
+
+        &__desc {
+            color: var(--orange-color);
+            font-weight: 600;
+        }
+    }
+}
+
+// Feedback
+.feedback {
+    margin-top: 100px;
+
+    @include abstracts.breakpoint(md) {
+        margin-top: 50px;
+    }
+
+    &__heading {
+        @include abstracts.breakpoint(md) {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__desc {
+        margin-top: 22px;
+        color: var(--para-color);
+        font-size: 1.8rem;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 155.556%;
+
+        @include abstracts.breakpoint(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        align-items: center;
+
+        @include abstracts.breakpoint(lg) {
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+    }
+
+    &-media {
+        &__img {
+            width: 100%;
+        }
+    }
+
+    &-user {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+
+        @include abstracts.breakpoint(md) {
+            margin-top: 30px;
+        }
+
+        &__img {
+            width: 70px;
+            border-radius: 50%;
+        }
+
+        &__name {
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: -0.14px;
+        }
+
+        &__desc {
+            margin-top: 2px;
+            color: var(--para-color);
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: -0.12px;
+        }
+
+        &__rating {
+            margin-top: 14px;
+        }
+    }
+}

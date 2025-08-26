@@ -1826,6 +1826,120 @@ a {
   line-height: 150%;
 }
 
+.tour {
+  margin-top: 140px;
+}
+@media (max-width: 767.98px) {
+  .tour {
+    margin-top: 80px;
+  }
+}
+.tour__heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media (max-width: 767.98px) {
+  .tour__heading {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 991.98px) {
+  .tour-list {
+    padding: 0 34px;
+  }
+}
+.tour-item {
+  padding: 42px 0;
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid #ececec;
+  background: #fff;
+}
+.tour-item__title {
+  margin-top: 28px;
+  margin-bottom: 18px;
+  font-family: Inter;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.tour-item__desc {
+  color: var(--orange-color);
+  font-weight: 600;
+}
+
+.feedback {
+  margin-top: 100px;
+}
+@media (max-width: 767.98px) {
+  .feedback {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .feedback__heading {
+    font-size: 2.4rem;
+  }
+}
+.feedback__desc {
+  margin-top: 22px;
+  color: var(--para-color);
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 155.556%;
+}
+@media (max-width: 767.98px) {
+  .feedback__desc {
+    font-size: 1.4rem;
+  }
+}
+.feedback-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+@media (max-width: 991.98px) {
+  .feedback-wrap {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+.feedback-media__img {
+  width: 100%;
+}
+.feedback-user {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+@media (max-width: 767.98px) {
+  .feedback-user {
+    margin-top: 30px;
+  }
+}
+.feedback-user__img {
+  width: 70px;
+  border-radius: 50%;
+}
+.feedback-user__name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.14px;
+}
+.feedback-user__desc {
+  margin-top: 2px;
+  color: var(--para-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -0.12px;
+}
+.feedback-user__rating {
+  margin-top: 14px;
+}
+
 .search-wrap, .search-list, .search-item {
   display: flex;
 }

@@ -1800,22 +1800,22 @@ a {
   justify-content: space-between;
 }
 .desti-loca-item--01 {
-  background: url(/assets/images/desti-01.png) top center/cover no-repeat;
+  background: url(/./assets/images/desti-01.png) top center/cover no-repeat;
 }
 .desti-loca-item--02 {
-  background: url(/assets/images/desti-02.png) top center/cover no-repeat;
+  background: url(/./assets/images/desti-02.png) top center/cover no-repeat;
 }
 .desti-loca-item--03 {
-  background: url(/assets/images/desti-03.png) top center/cover no-repeat;
+  background: url(/./assets/images/desti-03.png) top center/cover no-repeat;
 }
 .desti-loca-item--04 {
-  background: url(/assets/images/desti-04.png) top center/cover no-repeat;
+  background: url(/./assets/images/desti-04.png) top center/cover no-repeat;
 }
 .desti-loca-item--05 {
-  background: url(/assets/images/desti-05.png) top center/cover no-repeat;
+  background: url(/./assets/images/desti-05.png) top center/cover no-repeat;
 }
 .desti-loca-item--06 {
-  background: url(/assets/images/desti-06.png) top center/cover no-repeat;
+  background: url(/./assets/images/desti-06.png) top center/cover no-repeat;
 }
 .desti-loca-item__score {
   width: 45px;

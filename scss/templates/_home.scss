@@ -551,27 +551,27 @@
             justify-content: space-between;
 
             &--01 {
-                background: url(/./assets/images/desti-01.png) top center / cover no-repeat;
+                background: url(../images/desti-01.png) center center/cover no-repeat;
             }
 
             &--02 {
-                background: url(/./assets/images/desti-02.png) top center / cover no-repeat;
+                background: url(../images/desti-02.png) center center/cover no-repeat;
             }
 
             &--03 {
-                background: url(/./assets/images/desti-03.png) top center / cover no-repeat;
+                background: url(../images/desti-03.png) center center/cover no-repeat;
             }
 
             &--04 {
-                background: url(/./assets/images/desti-04.png) top center / cover no-repeat;
+                background: url(../images/desti-04.png) center center/cover no-repeat;
             }
 
             &--05 {
-                background: url(/./assets/images/desti-05.png) top center / cover no-repeat;
+                background: url(../images/desti-05.png) center center/cover no-repeat;
             }
 
             &--06 {
-                background: url(/./assets/images/desti-06.png) top center / cover no-repeat;
+                background: url(../images/desti-06.png) center center/cover no-repeat;
             }
 
             &__score {
@@ -730,5 +730,171 @@
         &__rating {
             margin-top: 14px;
         }
+    }
+}
+
+// Article & Travel Guidings
+.guide {
+    margin-top: 140px;
+
+    &__desc {
+        margin: 0 auto;
+        margin-top: 16px;
+        width: 60%;
+
+        @include abstracts.breakpoint(lg) {
+            width: 100%;
+        }
+    }
+
+    &-top {
+        text-align: center;
+    }
+
+    &-separate {
+        margin-top: 30px;
+    }
+
+    &-article {
+        margin-top: 60px;
+        display: grid;
+        gap: 120px;
+        grid-template-columns: 1fr 1fr;
+
+        @include abstracts.breakpoint(xl) {
+            grid-template-columns: 1fr;
+        }
+
+        @include abstracts.breakpoint(lg) {
+            gap: 50px;
+        }
+
+        &-item--big {
+            &-bot {
+                margin-top: 44px;
+                display: flex;
+                justify-content: space-between;
+                gap: 56px;
+
+                @include abstracts.breakpoint(xl) {
+                    flex-direction: column;
+                }
+
+                @include abstracts.breakpoint(md) {
+                    gap: 0px;
+                }
+            }
+
+            &__title {
+                font-family: Inter;
+                font-size: 2.6rem;
+                font-weight: 600;
+                line-height: 146.154%;
+
+                @include abstracts.breakpoint(md) {
+                    font-size: 2rem;
+                }
+            }
+
+            &__desc {
+                margin-top: 14px;
+                color: var(--para-color);
+                font-family: Inter;
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: 144.444%;
+
+                @include abstracts.breakpoint(xl) {
+                    width: 100%;
+                }
+
+                @include abstracts.breakpoint(md) {
+                    font-size: 1.4rem;
+                }
+            }
+
+            &__date {
+                white-space: nowrap;
+                margin-top: 10px;
+            }
+        }
+
+        &-right {
+            display: flex;
+            flex-direction: column;
+            gap: 34px;
+        }
+
+        &-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 36px;
+
+            @include abstracts.breakpoint(md) {
+                grid-template-columns: 1fr 2fr;
+            }
+
+            &__title {
+                font-family: Inter;
+                font-size: 2.2rem;
+                font-weight: 600;
+                line-height: 145.455%;
+
+                @include abstracts.breakpoint(md) {
+                    font-size: 2rem;
+                }
+            }
+
+            &__desc {
+                margin-top: 12px;
+
+                @include abstracts.breakpoint(md) {
+                    margin-top: 10px;
+                }
+            }
+
+            &__date {
+                margin-top: 50px;
+
+                @include abstracts.breakpoint(xl) {
+                    margin-top: 250px;
+                }
+
+                @include abstracts.breakpoint(lg) {
+                    margin-top: 150px;
+                }
+
+                @include abstracts.breakpoint(md) {
+                    margin-top: 20px;
+                }
+            }
+
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Subscribe
+.subscribe {
+    margin-top: 184px;
+
+    &-wrap {
+        background: var(--yellow-color);
+        border-radius: 20px;
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    &__title,
+    &__desc {
+        color: #fff;
+    }
+
+    &__desc {
+        width: 425px;
+        margin: 0 auto;
+        margin-top: 6px;
     }
 }

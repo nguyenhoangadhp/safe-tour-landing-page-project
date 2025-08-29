@@ -148,6 +148,7 @@ body {
 :root {
   --blue-color: #31c3e0;
   --orange-color: #ff7b29;
+  --orange-light-color: #f66f4d;
   --yellow-color: #e8c400;
   --text-color: #2d3134;
   --para-color: #676a6c;
@@ -2103,6 +2104,7 @@ a {
   margin-top: 184px;
 }
 .subscribe-wrap {
+  position: relative;
   background: var(--yellow-color);
   border-radius: 20px;
   padding: 70px 0;
@@ -2115,6 +2117,53 @@ a {
   width: 425px;
   margin: 0 auto;
   margin-top: 6px;
+}
+.subscribe-decor-01 {
+  position: absolute;
+  top: -8%;
+  left: 10%;
+}
+.subscribe-decor-02 {
+  position: absolute;
+  bottom: 25%;
+  right: 6%;
+}
+.subscribe-mail {
+  margin-top: 40px;
+}
+.subscribe-mail-form {
+  position: relative;
+  display: inline-flex;
+  width: 450px;
+  height: 56px;
+}
+.subscribe-mail-input {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  padding: 10px 12px 10px 24px;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  font-family: Poppins;
+}
+.subscribe-mail-input::placeholder {
+  color: #b3b4b5;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.subscribe-mail-send {
+  position: absolute;
+  padding: 12px;
+  width: 44px;
+  right: 10px;
+  bottom: 7px;
+  border-radius: 10px;
+  background: var(--orange-light-color);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 5px 14px rgba(247, 103, 67, 0.25);
 }
 
 .search-wrap, .search-list, .search-item {

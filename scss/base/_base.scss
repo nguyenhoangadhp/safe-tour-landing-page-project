@@ -119,6 +119,14 @@ a {
     line-height: 142.857%;
 }
 
+.desc--third {
+    color: var(--para-color-light);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 316.667%;
+}
+
 // Show / Hide / Responsive
 .hide {
     display: none !important;

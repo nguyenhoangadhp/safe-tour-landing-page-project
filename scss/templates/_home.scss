@@ -2,7 +2,7 @@
 
 // Header
 .header {
-    margin-top: 32px;
+    padding-top: 32px;
 
     &-wrap {
         display: flex;
@@ -256,7 +256,7 @@
 
     &__img {
         width: 436px;
-        object-fit: cover;
+        object-fit: fill;
 
         @include abstracts.breakpoint(xl) {
             width: 100%;

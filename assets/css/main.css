@@ -2344,6 +2344,60 @@ a {
   }
 }
 
+.guide {
+  margin: 140px 0;
+}
+@media (max-width: 767.98px) {
+  .guide {
+    margin: 60px 0;
+  }
+}
+.guide__heading {
+  margin-bottom: 40px;
+}
+@media (max-width: 767.98px) {
+  .guide__heading {
+    font-size: 2.4rem;
+  }
+}
+.guide-item__img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.guide-item-info {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .guide-item-info {
+    align-items: center;
+  }
+}
+.guide-item__name {
+  margin: 4px;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+@media (max-width: 767.98px) {
+  .guide-item__name {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .guide-item__desc {
+    font-size: 1.2rem;
+  }
+}
+.guide-item-social {
+  display: flex;
+  gap: 12px;
+}
+.guide-item-social__icon {
+  color: var(--para-color);
+  cursor: pointer;
+}
+
 .search-wrap, .search-list, .search-item {
   display: flex;
 }

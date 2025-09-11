@@ -2256,17 +2256,17 @@ a {
   }
 }
 
-.header-blog {
-  background: url(../images/blog-background.png) top center/cover no-repeat;
+.header-about {
+  background: url(../images/about-bg.png) top center/cover no-repeat;
   max-width: 100vw;
   height: 100vh;
 }
 @media (max-width: 991.98px) {
-  .header-blog {
+  .header-about {
     height: initial;
   }
 }
-.header-blog__heading {
+.header-about__heading {
   padding-top: 140px;
   padding-bottom: 220px;
   color: var(--orange-color);
@@ -2276,7 +2276,7 @@ a {
   line-height: 110.294%;
 }
 @media (max-width: 991.98px) {
-  .header-blog__heading {
+  .header-about__heading {
     padding-top: 43px;
     font-size: 4rem;
     font-weight: 700;
@@ -2284,7 +2284,7 @@ a {
   }
 }
 @media (max-width: 575.98px) {
-  .header-blog__heading {
+  .header-about__heading {
     padding-bottom: 95px;
   }
 }
@@ -2367,11 +2367,7 @@ a {
 .guide-item-info {
   display: flex;
   justify-content: space-between;
-}
-@media (max-width: 767.98px) {
-  .guide-item-info {
-    align-items: center;
-  }
+  align-items: center;
 }
 .guide-item__name {
   margin: 4px;
@@ -2396,6 +2392,82 @@ a {
 .guide-item-social__icon {
   color: var(--para-color);
   cursor: pointer;
+  transition: all 0.25s;
+}
+.guide-item-social__icon:hover {
+  opacity: 0.8;
+}
+
+.header-desti {
+  background: url(../images/destinations-bg.png) top center/cover no-repeat;
+  max-width: 100vw;
+  height: 100vh;
+}
+@media (max-width: 991.98px) {
+  .header-desti {
+    height: initial;
+  }
+}
+.header-desti__heading {
+  padding-top: 140px;
+  color: var(--orange-color);
+  text-align: center;
+  font-size: 13.6rem;
+  font-weight: 700;
+  line-height: 110.294%;
+}
+@media (max-width: 991.98px) {
+  .header-desti__heading {
+    padding-top: 43px;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 125%;
+  }
+}
+.header-desti__desc {
+  margin-top: 6px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 133.333%;
+}
+@media (max-width: 991.98px) {
+  .header-desti__desc {
+    font-size: 1.6rem;
+    padding-bottom: 95px;
+  }
+}
+
+.desti-location {
+  margin: 140px 0;
+}
+@media (max-width: 767.98px) {
+  .desti-location {
+    margin: 60px 0;
+  }
+}
+.desti-location-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.desti-location-item__name {
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 133.333%;
+}
+.desti-location__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+@media (max-width: 767.98px) {
+  .desti-location__btn {
+    margin-top: 60px;
+  }
 }
 
 .search-wrap, .search-list, .search-item {

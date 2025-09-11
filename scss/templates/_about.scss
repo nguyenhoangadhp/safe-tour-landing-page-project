@@ -1,8 +1,8 @@
 @use "../abstracts";
 
-// Header of blog
-.header-blog {
-    background: url(../images/blog-background.png) top center / cover no-repeat;
+// Header of about
+.header-about {
+    background: url(../images/about-bg.png) top center / cover no-repeat;
 
     max-width: 100vw;
     height: 100vh;
@@ -113,10 +113,7 @@
         &-info {
             display: flex;
             justify-content: space-between;
-
-            @include abstracts.breakpoint(md) {
-                align-items: center;
-            }
+            align-items: center;
         }
 
         &__name {
@@ -143,6 +140,10 @@
             &__icon {
                 color: var(--para-color);
                 cursor: pointer;
+                transition: all 0.25s;
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
     }

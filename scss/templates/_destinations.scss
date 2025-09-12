@@ -38,7 +38,7 @@
 
         @include abstracts.breakpoint(lg) {
             font-size: 1.6rem;
-            padding-bottom: 95px;
+            padding-bottom: 120px;
         }
     }
 }
@@ -57,6 +57,7 @@
             gap: 20px;
 
             &__name {
+                color: initial;
                 font-family: Inter;
                 font-size: 2.4rem;
                 font-weight: 600;

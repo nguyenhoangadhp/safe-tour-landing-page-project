@@ -2436,7 +2436,7 @@ a {
 @media (max-width: 991.98px) {
   .header-desti__desc {
     font-size: 1.6rem;
-    padding-bottom: 95px;
+    padding-bottom: 120px;
   }
 }
 
@@ -2454,6 +2454,7 @@ a {
   gap: 20px;
 }
 .desti-location-item__name {
+  color: initial;
   font-family: Inter;
   font-size: 2.4rem;
   font-weight: 600;

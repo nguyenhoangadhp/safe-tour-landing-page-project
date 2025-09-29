@@ -1,0 +1,45 @@
+@use "../abstracts";
+
+.page {
+    &-list {
+        margin: 100px 0 140px 0;
+
+        @include abstracts.breakpoint(md) {
+            margin: 60px 0;
+        }
+    }
+
+    &-item {
+        border-radius: 10px;
+        background: #ececec;
+
+        &__img {
+            width: 100%;
+        }
+
+        &-wrap {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__heading {
+            @include abstracts.breakpoint(md) {
+                font-size: 2rem;
+            }
+        }
+
+        &__days {
+            @include abstracts.breakpoint(md) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &__price {
+            @include abstracts.breakpoint(md) {
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -61,6 +61,7 @@
             padding: 30px 30px 44px 30px;
             border-radius: 10px;
             background: #ececec;
+            max-height: 540px;
 
             &__btn {
                 font-size: 1.6rem;
@@ -167,6 +168,60 @@
             @include abstracts.breakpoint(md) {
                 font-size: 1.6rem;
             }
+        }
+    }
+
+    // Blog detail
+    &-detail {
+        &-outstand {
+            margin-top: 106px;
+
+            @include abstracts.breakpoint(md) {
+                margin-top: 60px 0;
+            }
+
+            &__img {
+                margin: 30px 0;
+
+                @include abstracts.breakpoint(md) {
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        &__title {
+            margin-top: 30px;
+            color: var(--orange-color);
+            font-family: Inter;
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 133.333%;
+
+            @include abstracts.breakpoint(md) {
+                margin-top: 20px;
+                font-size: 2rem;
+            }
+        }
+
+        &__desc {
+            margin-top: 20px;
+
+            @include abstracts.breakpoint(md) {
+                margin-top: 10px;
+                font-size: 1.4rem;
+            }
+        }
+
+        &-list {
+            margin: 30px 0;
+
+            // @include abstracts.breakpoint(md) {
+            //     margin: 20px 0;
+            // }
+        }
+
+        &__img {
+            width: 100%;
         }
     }
 }

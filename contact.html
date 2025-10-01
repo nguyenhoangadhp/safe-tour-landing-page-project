@@ -26,7 +26,7 @@
     </head>
     <body>
         <!-- Header -->
-        <div class="header">
+        <div class="header header-about">
             <div class="container">
                 <div class="header-wrap">
                     <a href="#" class="logo">
@@ -58,146 +58,60 @@
                         <img src="./assets/icons/mobile-menu.svg" alt="" class="menu-mobile__img" />
                     </div>
                 </div>
+
+                <h1 class="header-about__heading">Contact us</h1>
             </div>
         </div>
 
-        <!-- Page intro -->
-        <section class="blog-intro">
-            <div class="container">
-                <h1 class="heading--primary">Tour</h1>
-                <img src="./assets/images/blog-intro-decor.svg" alt="" class="blog-intro__decor" />
-            </div>
-        </section>
-
-        <!-- Search -->
-        <div class="search page-search">
-            <div class="container">
-                <div class="search-wrap">
-                    <div class="search-list">
-                        <div class="search-item">
-                            <h4 class="footer__title heading--fourth search-item__title">Location</h4>
-                            <div class="search-item-menu">
-                                <span class="desc--second search-item-menu__desc">Bali, Indonesia</span>
-                                <img src="./assets/icons/arrow-down.svg" alt="" class="search-item-menu__icon" />
-                            </div>
+        <div class="contact">
+            <div class="contact-wrap">
+                <div class="contact-info">
+                    <div class="contact-info-wrap">
+                        <div class="contact-info__row">
+                            <img src="./assets/icons/mail.svg" alt="" class="contact-info__row-icon" />
+                            <a href="mailto:ten@example.com" class="contact-info__row-desc"
+                                >2369 Robinson Lane Jackson, OH 45640</a
+                            >
                         </div>
 
-                        <div class="search-item">
-                            <h4 class="footer__title heading--fourth search-item__title">City</h4>
-                            <div class="search-item-menu">
-                                <span class="desc--second search-item-menu__desc">Prambanan</span>
-                                <img src="./assets/icons/arrow-down.svg" alt="" class="search-item-menu__icon" />
-                            </div>
+                        <div class="contact-info__row">
+                            <img src="./assets/icons/phone.svg" alt="" class="contact-info__row-icon" />
+                            <a href="tel:+84123456789" class="contact-info__row-desc">(+88) 017 000 00000</a>
                         </div>
 
-                        <div class="search-item">
-                            <h4 class="footer__title heading--fourth search-item__title">Guest</h4>
-                            <div class="search-item-menu">
-                                <span class="desc--second search-item-menu__desc">8 Persons</span>
-                                <img src="./assets/icons/arrow-down.svg" alt="" class="search-item-menu__icon" />
-                            </div>
+                        <div class="contact-info__row">
+                            <img src="./assets/icons/location.svg" alt="" class="contact-info__row-icon" />
+                            <a href="mailto:ten@example.com" class="contact-info__row-desc">Info@example.com</a>
                         </div>
                     </div>
-
-                    <div class="search-cta">
-                        <button class="search-cta__btn">
-                            <img src="./assets/icons/search.svg" alt="" class="search-cta__btn-icon" />
-                            <span>Search</span>
-                        </button>
-                    </div>
                 </div>
+
+                <section class="contact-form">
+                    <form action="" class="contact-form-wrap">
+                        <input type="text" name="" id="" placeholder="Name" class="contact-form__input" />
+                        <input type="email" name="" id="" placeholder="Email" class="contact-form__input" />
+                        <input type="text" name="" id="" placeholder="Subject" class="contact-form__input" />
+
+                        <textarea
+                            name=""
+                            id=""
+                            class="contact-form__input contact-form__input--large"
+                            placeholder="Message"
+                        ></textarea>
+                    </form>
+                    <button class="btn btn--orange contact-form__btn">Subscribe</button>
+                </section>
             </div>
-        </div>
 
-        <!-- Page list -->
-        <div class="page-list">
-            <div class="container">
-                <div class="row row-cols-2 row-cols-lg-1 g-3">
-                    <a href="contact.html" class="col">
-                        <div class="page-item">
-                            <img src="./assets/images/page-item-01.png" alt="" class="page-item__img" />
-
-                            <div class="page-item-wrap">
-                                <h2 class="heading--second page-item__heading">Indonesia</h2>
-                                <div class="page-item-info">
-                                    <p class="desc--primary page-item__days">9 days</p>
-                                    <p class="heading--article page-item__price">$6,500</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="contact.html" class="col">
-                        <div class="page-item">
-                            <img src="./assets/images/page-item-02.png" alt="" class="page-item__img" />
-
-                            <div class="page-item-wrap">
-                                <h2 class="heading--second page-item__heading">Thailand</h2>
-                                <div class="page-item-info">
-                                    <p class="desc--primary page-item__days">9 days</p>
-                                    <p class="heading--article page-item__days">$6,500</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="contact.html" class="col">
-                        <div class="page-item">
-                            <img src="./assets/images/page-item-03.png" alt="" class="page-item__img" />
-
-                            <div class="page-item-wrap">
-                                <h2 class="heading--second page-item__heading">Dubai</h2>
-                                <div class="page-item-info">
-                                    <p class="desc--primary page-item__days">9 days</p>
-                                    <p class="heading--article page-item__days">$6,500</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="contact.html" class="col">
-                        <div class="page-item">
-                            <img src="./assets/images/page-item-04.png" alt="" class="page-item__img" />
-
-                            <div class="page-item-wrap">
-                                <h2 class="heading--second page-item__heading">Maldives</h2>
-                                <div class="page-item-info">
-                                    <p class="desc--primary page-item__days">9 days</p>
-                                    <p class="heading--article page-item__days">$6,500</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="contact.html" class="col">
-                        <div class="page-item">
-                            <img src="./assets/images/page-item-05.png" alt="" class="page-item__img" />
-
-                            <div class="page-item-wrap">
-                                <h2 class="heading--second page-item__heading">Hongkong</h2>
-                                <div class="page-item-info">
-                                    <p class="desc--primary page-item__days">9 days</p>
-                                    <p class="heading--article page-item__days">$6,500</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="contact.html" class="col">
-                        <div class="page-item">
-                            <img src="./assets/images/page-item-01.png" alt="" class="page-item__img" />
-
-                            <div class="page-item-wrap">
-                                <h2 class="heading--second page-item__heading">Bangladesh</h2>
-                                <div class="page-item-info">
-                                    <p class="desc--primary page-item__days">9 days</p>
-                                    <p class="heading--article page-item__days">$6,500</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.6841585286948!2d105.79202171143677!3d21.04531998052729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3a8fe5966b%3A0x4c539cae63596919!2zQ2jhu6MgTmdoxKlhIFTDom4gUC4gTmdoxKlhIFTDom4sIE5naMSpYSBUw6JuLCBD4bqndSBHaeG6pXksIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1759252071754!5m2!1svi!2s"
+                width="100%"
+                height="600"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
         </div>
 
         <!-- Footer -->

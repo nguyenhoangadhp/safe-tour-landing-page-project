@@ -1,0 +1,120 @@
+@use "../abstracts";
+
+.contact {
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        @include abstracts.breakpoint(xl) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-info {
+        background: #ececec;
+        height: 628px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include abstracts.breakpoint(xl) {
+            margin-top: 60px;
+            margin-left: 100px;
+            justify-content: flex-start;
+            background: #fff;
+            height: fit-content;
+        }
+
+        @include abstracts.breakpoint(md) {
+            margin-left: 30px;
+        }
+
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            &-desc {
+                color: initial;
+                font-size: 2rem;
+                font-weight: 400;
+                line-height: 150%;
+                transition: all 0.25s;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &-form {
+        @include abstracts.breakpoint(xl) {
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            margin: 0 100px;
+            gap: 30px;
+
+            @include abstracts.breakpoint(md) {
+                margin: 0 30px;
+            }
+        }
+
+        &__input {
+            width: 485px;
+            height: 66px;
+            padding: 20px;
+
+            @include abstracts.breakpoint(md) {
+                width: 335px;
+            }
+
+            border-radius: 12px;
+            border: 1px solid #ececec;
+            background: var(--White, #fff);
+
+            color: initial;
+            font-family: Inter;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 162.5%;
+
+            &::placeholder {
+                color: var(--para-color);
+                font-family: Inter;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 162.5%;
+            }
+
+            &--large {
+                height: 114px;
+            }
+        }
+
+        &__btn {
+            margin-top: 30px;
+            margin-left: 100px;
+
+            @include abstracts.breakpoint(md) {
+                margin-left: 30px;
+            }
+        }
+    }
+
+    &-map {
+        width: 100%;
+    }
+}

@@ -2200,6 +2200,7 @@ input {
 }
 @media (max-width: 767.98px) {
   .footer {
+    margin-top: 60px;
     margin-bottom: 30px;
   }
 }
@@ -2717,6 +2718,117 @@ input {
   .page-item__price {
     font-size: 2rem;
   }
+}
+
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+@media (max-width: 1199.98px) {
+  .contact-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+.contact-info {
+  background: #ececec;
+  height: 628px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1199.98px) {
+  .contact-info {
+    margin-top: 60px;
+    margin-left: 100px;
+    justify-content: flex-start;
+    background: #fff;
+    height: fit-content;
+  }
+}
+@media (max-width: 767.98px) {
+  .contact-info {
+    margin-left: 30px;
+  }
+}
+.contact-info-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-info__row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-info__row-desc {
+  color: initial;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.25s;
+}
+.contact-info__row-desc:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1199.98px) {
+  .contact-form {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+.contact-form-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px;
+  gap: 30px;
+}
+@media (max-width: 767.98px) {
+  .contact-form-wrap {
+    margin: 0 30px;
+  }
+}
+.contact-form__input {
+  width: 485px;
+  height: 66px;
+  padding: 20px;
+}
+@media (max-width: 767.98px) {
+  .contact-form__input {
+    width: 335px;
+  }
+}
+.contact-form__input {
+  border-radius: 12px;
+  border: 1px solid #ececec;
+  background: var(--White, #fff);
+  color: initial;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 162.5%;
+}
+.contact-form__input::placeholder {
+  color: var(--para-color);
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 162.5%;
+}
+.contact-form__input--large {
+  height: 114px;
+}
+.contact-form__btn {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+@media (max-width: 767.98px) {
+  .contact-form__btn {
+    margin-left: 30px;
+  }
+}
+.contact-map {
+  width: 100%;
 }
 
 .search-wrap, .search-list, .search-item {
